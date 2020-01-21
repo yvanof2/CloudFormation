@@ -1,0 +1,20 @@
+
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Sample to create an EC2 instance restricted to two users.
+Parameters:
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    ConstraintDescription: must be the name of an existing EC2 KeyPair.
+ 
+    Description: WebServer EC2 instance type
+    Type: String
+    Default: t2.small
+    
+    ConstraintDescription: must be a valid EC2 instance type.
+ 
+Resources:
+  WebServerInstance:
+    Type: 'AWS::EC2::Instance
+  Security Group
